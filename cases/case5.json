@@ -1,0 +1,49 @@
+{
+  "case_id": "case-5",
+  "benchmark_case_number": 5,
+  "transaction_id": "2983415",
+  "risk_assessment": {
+    "initial_score": 0.73,
+    "typology_pattern": "ATO",
+    "pre_evidence_confidence": 59,
+    "post_evidence_confidence": 91
+  },
+  "tigergraph_subgraph_entities": [
+    {
+      "id": "T5",
+      "label": "Txn #2983415",
+      "type": "txn"
+    },
+    {
+      "id": "C5",
+      "label": "Card 1005",
+      "type": "card"
+    },
+    {
+      "id": "D5",
+      "label": "Device_5",
+      "type": "device"
+    }
+  ],
+  "evidence_findings": [
+    {
+      "rule": "POL-ATO-03",
+      "text": "Suspicious pattern violating ATO risk thresholds."
+    }
+  ],
+  "next_best_action": {
+    "pre_evidence_recommendation": "Request Additional Identity Telemetry",
+    "post_evidence_recommendation": "ENFORCE STEP-UP & ESCALATE TO ANALYST",
+    "required_approval_route": "Analyst Review Required"
+  },
+  "graphrag_prior_cases": [
+    {
+      "id": "Case #505",
+      "similarity": 0.85,
+      "outcome": "CONFIRMED_FRAUD",
+      "note": "Matches historic velocity attack vector."
+    }
+  ],
+  "case_status": "UNRESOLVED",
+  "agent_timestamp": "2026-09-23T21:09:39.698Z"
+}
