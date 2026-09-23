@@ -1,0 +1,78 @@
+{
+  "case_id": "case-1",
+  "benchmark_case_number": 1,
+  "transaction_id": "2983411",
+  "risk_assessment": {
+    "initial_score": 0.94,
+    "typology_pattern": "ATO",
+    "pre_evidence_confidence": 88,
+    "post_evidence_confidence": 96
+  },
+  "tigergraph_subgraph_entities": [
+    {
+      "id": "T1",
+      "label": "Txn #2983411",
+      "type": "txn"
+    },
+    {
+      "id": "C1",
+      "label": "Card 4916..1029",
+      "type": "card"
+    },
+    {
+      "id": "D1",
+      "label": "iOS iPhone 15",
+      "type": "device"
+    },
+    {
+      "id": "IP1",
+      "label": "185.220.101.4",
+      "type": "ip"
+    },
+    {
+      "id": "P1",
+      "label": "Prior Case #842",
+      "type": "prior"
+    },
+    {
+      "id": "POL1",
+      "label": "Policy ATO-01",
+      "type": "policy"
+    }
+  ],
+  "evidence_findings": [
+    {
+      "rule": "POL-ATO-01",
+      "text": "Device ID mismatch with customer baseline (New OS)"
+    },
+    {
+      "rule": "POL-GEO-04",
+      "text": "Impossible travel velocity (>500 mph between txns)"
+    },
+    {
+      "rule": "POL-NET-02",
+      "text": "Known anonymizing VPN / TOR exit node IP address"
+    }
+  ],
+  "next_best_action": {
+    "pre_evidence_recommendation": "Request Customer Step-Up Auth (SMS OTP) & Temporary Hold",
+    "post_evidence_recommendation": "PERMANENT BLOCK + FILE FINCEN SAR + CLOSE ACCOUNT",
+    "required_approval_route": "L2 Senior Fraud Analyst Approval Required"
+  },
+  "graphrag_prior_cases": [
+    {
+      "id": "Case #842",
+      "similarity": 0.93,
+      "outcome": "CONFIRMED_FRAUD",
+      "note": "Account takeover via TOR IP. Customer credentials compromised in breach."
+    },
+    {
+      "id": "Case #619",
+      "similarity": 0.88,
+      "outcome": "CONFIRMED_FRAUD",
+      "note": "Rapid carding attempt using temp-mail address."
+    }
+  ],
+  "case_status": "UNRESOLVED",
+  "agent_timestamp": "2026-09-23T21:05:03.546Z"
+}
