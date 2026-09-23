@@ -1,0 +1,49 @@
+{
+  "case_id": "case-4",
+  "benchmark_case_number": 4,
+  "transaction_id": "2983414",
+  "risk_assessment": {
+    "initial_score": 0.72,
+    "typology_pattern": "VELOCITY",
+    "pre_evidence_confidence": 57,
+    "post_evidence_confidence": 91
+  },
+  "tigergraph_subgraph_entities": [
+    {
+      "id": "T4",
+      "label": "Txn #2983414",
+      "type": "txn"
+    },
+    {
+      "id": "C4",
+      "label": "Card 1004",
+      "type": "card"
+    },
+    {
+      "id": "D4",
+      "label": "Device_4",
+      "type": "device"
+    }
+  ],
+  "evidence_findings": [
+    {
+      "rule": "POL-VELOCITY-02",
+      "text": "Suspicious pattern violating VELOCITY risk thresholds."
+    }
+  ],
+  "next_best_action": {
+    "pre_evidence_recommendation": "Request Additional Identity Telemetry",
+    "post_evidence_recommendation": "ENFORCE STEP-UP & ESCALATE TO ANALYST",
+    "required_approval_route": "Analyst Review Required"
+  },
+  "graphrag_prior_cases": [
+    {
+      "id": "Case #504",
+      "similarity": 0.85,
+      "outcome": "CONFIRMED_FRAUD",
+      "note": "Matches historic velocity attack vector."
+    }
+  ],
+  "case_status": "UNRESOLVED",
+  "agent_timestamp": "2026-09-23T21:09:18.585Z"
+}
