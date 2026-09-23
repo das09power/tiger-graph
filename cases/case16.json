@@ -1,0 +1,49 @@
+{
+  "case_id": "case-16",
+  "benchmark_case_number": 16,
+  "transaction_id": "2983426",
+  "risk_assessment": {
+    "initial_score": 0.92,
+    "typology_pattern": "CNP",
+    "pre_evidence_confidence": 87,
+    "post_evidence_confidence": 91
+  },
+  "tigergraph_subgraph_entities": [
+    {
+      "id": "T16",
+      "label": "Txn #2983426",
+      "type": "txn"
+    },
+    {
+      "id": "C16",
+      "label": "Card 1016",
+      "type": "card"
+    },
+    {
+      "id": "D16",
+      "label": "Device_16",
+      "type": "device"
+    }
+  ],
+  "evidence_findings": [
+    {
+      "rule": "POL-CNP-02",
+      "text": "Suspicious pattern violating CNP risk thresholds."
+    }
+  ],
+  "next_best_action": {
+    "pre_evidence_recommendation": "Request Additional Identity Telemetry",
+    "post_evidence_recommendation": "ENFORCE STEP-UP & ESCALATE TO ANALYST",
+    "required_approval_route": "Analyst Review Required"
+  },
+  "graphrag_prior_cases": [
+    {
+      "id": "Case #516",
+      "similarity": 0.85,
+      "outcome": "CONFIRMED_FRAUD",
+      "note": "Matches historic velocity attack vector."
+    }
+  ],
+  "case_status": "UNRESOLVED",
+  "agent_timestamp": "2026-09-23T21:22:13.601Z"
+}
