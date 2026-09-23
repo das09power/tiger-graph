@@ -1,34 +1,34 @@
 {
-  "case_id": "case-18",
-  "benchmark_case_number": 18,
-  "transaction_id": "2983428",
+  "case_id": "case-19",
+  "benchmark_case_number": 19,
+  "transaction_id": "2983429",
   "risk_assessment": {
-    "initial_score": 0.96,
-    "typology_pattern": "FRIENDLY",
-    "pre_evidence_confidence": 91,
+    "initial_score": 0.65,
+    "typology_pattern": "VELOCITY",
+    "pre_evidence_confidence": 53,
     "post_evidence_confidence": 91
   },
   "tigergraph_subgraph_entities": [
     {
-      "id": "T18",
-      "label": "Txn #2983428",
+      "id": "T19",
+      "label": "Txn #2983429",
       "type": "txn"
     },
     {
-      "id": "C18",
-      "label": "Card 1018",
+      "id": "C19",
+      "label": "Card 1019",
       "type": "card"
     },
     {
-      "id": "D18",
-      "label": "Device_18",
+      "id": "D19",
+      "label": "Device_19",
       "type": "device"
     }
   ],
   "evidence_findings": [
     {
-      "rule": "POL-FRIENDLY-01",
-      "text": "Suspicious pattern violating FRIENDLY risk thresholds."
+      "rule": "POL-VELOCITY-02",
+      "text": "Suspicious pattern violating VELOCITY risk thresholds."
     }
   ],
   "next_best_action": {
@@ -38,12 +38,12 @@
   },
   "graphrag_prior_cases": [
     {
-      "id": "Case #518",
+      "id": "Case #519",
       "similarity": 0.85,
       "outcome": "CONFIRMED_FRAUD",
       "note": "Matches historic velocity attack vector."
     }
   ],
-  "case_status": "RESOLVED",
-  "agent_timestamp": "2026-09-23T21:23:11.409Z"
+  "case_status": "UNRESOLVED",
+  "agent_timestamp": "2026-09-23T21:23:43.297Z"
 }
