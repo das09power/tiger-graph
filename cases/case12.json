@@ -1,0 +1,49 @@
+{
+  "case_id": "case-12",
+  "benchmark_case_number": 12,
+  "transaction_id": "2983422",
+  "risk_assessment": {
+    "initial_score": 0.85,
+    "typology_pattern": "SYNTH",
+    "pre_evidence_confidence": 76,
+    "post_evidence_confidence": 91
+  },
+  "tigergraph_subgraph_entities": [
+    {
+      "id": "T12",
+      "label": "Txn #2983422",
+      "type": "txn"
+    },
+    {
+      "id": "C12",
+      "label": "Card 1012",
+      "type": "card"
+    },
+    {
+      "id": "D12",
+      "label": "Device_12",
+      "type": "device"
+    }
+  ],
+  "evidence_findings": [
+    {
+      "rule": "POL-SYNTH-01",
+      "text": "Suspicious pattern violating SYNTH risk thresholds."
+    }
+  ],
+  "next_best_action": {
+    "pre_evidence_recommendation": "Request Additional Identity Telemetry",
+    "post_evidence_recommendation": "ENFORCE STEP-UP & ESCALATE TO ANALYST",
+    "required_approval_route": "Analyst Review Required"
+  },
+  "graphrag_prior_cases": [
+    {
+      "id": "Case #512",
+      "similarity": 0.85,
+      "outcome": "CONFIRMED_FRAUD",
+      "note": "Matches historic velocity attack vector."
+    }
+  ],
+  "case_status": "RESOLVED",
+  "agent_timestamp": "2026-09-23T21:17:52.346Z"
+}
